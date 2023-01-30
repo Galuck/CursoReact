@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Aprendendo JavaScript</title>
+        <script type="text/JavaScript" src="curso01.js"></script>
+        <h1>Modificando HTML com JS</h1>
+    </head>
+
+    <body>
+        <div id="area">
+            <p>Antes</p>
+        </div>
+        <br/>
+        <br/>
+
+        <!--Clicar para mudar o HTML-->
+        <button onclick="document.getElementById('area').innerHTML= 'Bem vindo ' + prompt('Qual seu nome?'); ">Mudar</button><!--Vai mudar a div area para o prompt digitado pelo usuário-->
+        <!--getElementById para pegar o elemento pelo Id dele-->
+        <!--innerHTML para mudar alguma coisa dentro do HTML-->
+
+        <button onclick="this.innerHTML= 'Meu nome é: ' + prompt('Qual o meu nome?'); ">Qual o meu nome?</button>
+
+        <br/>
+        <br/>
+        <div id="area2">
+            <p>Teste Função</p>
+        </div>
+        <!--Funções em JS-->
+        <button onclick="login();">Criando Função</button>
+
+
+    </body>
+
+
+</html>
