@@ -27,9 +27,17 @@ class App extends Component{
   constructor(props){
     super(props);
     this.state = {
-        email: 'teste@teste.com',
-        senha: '123123'
+        email: '',
+        senha: '',
+        sexo: 'masculino'
     }
+
+    this.trocaEmail = this.trocaEmail.bind(this);
+  }
+
+  trocaEmail(e){
+    let valorDigitado = e.target.value;
+    this.setState({email: valorDigitado});
   }
 
   render(){
