@@ -22,4 +22,29 @@ function App() {
   );
 }
 
+class App extends Component{
+
+  constructor(props){
+    super(props);
+    this.state = {
+        email: 'teste@teste.com',
+        senha: '123123'
+    }
+  }
+
+  render(){
+    return(
+      <div>
+        <h2>Login</h2>
+        Email:
+        <input type="email" name="email" value={this.state.email}></input>
+        <br/>
+        Senha:
+        <input type="password" name="senha" value={this.state.email}></input>
+      </div>
+    );
+  }
+
+}
+
 export default App;
